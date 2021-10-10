@@ -32,9 +32,15 @@ Packages: pandas, numpy, sklearn, statsmodles, matplotlib, seaborn, pickle
 
 - correlation plots
 ## Exploratory Data Analysis
+Here is the distribution of the player position population used for the final model
+
 ![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/Bar%20chart%20for%20player%20position%20population.png)
 
+These correlation plots show feature selection
+
 ![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/Correlation%20plot.png)
+
+These 'lmplot' show how the relationship between TOV and AST changes for different player positions
 
 ![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/lmplot%20for%20TOV%20v%20AST.png)
 
@@ -57,10 +63,12 @@ To validate the metric results from the test dataset each metric was recalculate
 
 ## Model Results and Performance 
 Here are the summary results for both models 
+
 ![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/Model%20Summary%20result.png)
 
 The figure shows the Predicted V Actual turnovers commited per 36minutes 
+
 ![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/Model%201--%20Predicted%20V%20Actual%20TOV.png)
 
 ## Try out Model 
-Please feel free to try out the model 
+Please feel free to try out the model using the 'Try_out_Model.py' file in the 'Try Out Models' folder
