@@ -35,7 +35,23 @@ Packages: pandas, numpy, sklearn, statsmodles, matplotlib, seaborn, pickle
 
 
 ## Model Building 
+The dependent variable was TOV
+For model 1: Independent variables = 2PA, AST, FTA
 
-## Model Performance 
+For Model 2: Independent variables = 2PA, AST, FTA, Pos (Player Position)
+
+Pos is a categorical variable, and it was added because I believed that Player position would introduce player skill to the model. I hypothesised that the position a player plays in would lend them to cetain skillsets which would impact their likelihood of commiting turnovers. 
+
+Pos was converted into a dummy variable before any modelling.
+
+I split the data into 80-20 train and tests split. 
+
+I used Multiple Linear Regresssion for both models and evaluated them on the test set using the following metrics: Root Mean Squared, Mean Absolute Error and R-squared. I chose MAE as a baseline error metric and RMSE because it punishes extrememely poor predictions. I chose R2 to gauge the how well the addition of the Pos variable explains the variance in player skill.  
+
+To validate the metric results from the test dataset each metric was recalculated with 5-fold cross validation. 
+
+
+## Model Results and Performance 
+![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Model%20Summary%20result.png)
 
 ## Try out Model 
