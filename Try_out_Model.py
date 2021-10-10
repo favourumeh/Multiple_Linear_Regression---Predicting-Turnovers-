@@ -2,6 +2,8 @@
 """
 Created on Sun Oct 10 13:51:44 2021
 
+Try out the models created. Model 1 does not factor player position whilst Model 2 does
+
 @author: favou
 """
 import pandas as pd
@@ -18,7 +20,7 @@ Two_PA = 9.85987 #number of two-point shots taken
 FTA = 4.70064 #number of free throws attempted
 Assists = 6.99363 #number of assists 
     
-    #if applicable 
+    #if applicable(i.e. Model 2 only) 
 Position = 'Pos_PG' # player position chose one of: Pos_C, Pos_PF, Pos_PG, Pos_SF, Pos_SG
 
 ###############################################################################
