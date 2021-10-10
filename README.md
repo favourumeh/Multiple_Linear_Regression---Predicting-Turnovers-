@@ -10,7 +10,7 @@
         
         - using train-test split and cross-validation 
         
- - Ultimately its was found that Two-point attempts (per36), Free throw Attempts (per36) and Assists (per36) were the only factors from the dataset that had a notable affected the TOV:
+ - Ultimately its was found that Two-point attempts per36(2PA), Free throw Attempts  per36(FTA) and Assists per36(AST)  were the only factors from the dataset that had a notable affected the TOV:
  
         - **R2 = 0.46**. This is low because the model does not factor a player's skill which is the primary predicator of TOV. The R2 suggests that there is a significant variance in skill level amongs players  
         
