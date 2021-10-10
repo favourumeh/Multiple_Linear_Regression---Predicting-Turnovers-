@@ -1,5 +1,9 @@
 # Multiple_Linear_Regression-- Predicting Turnovers 
 
+- For more indepth analysis see the report ('Multiple Linear Regression_with_FTA.docx'). Otherwise the rest of the README gives a summary of some of the actions undergone and the findings of the project. 
+
+- Please feel free to try out the models using the 'Try_out_Model.py' file in the 'Try Out Models' folder
+
 ## Project Overview
  - In this project two multiple linear regression models were created to predict the turnovers commited by an NBA player per 36 minutes (TOV)
  
@@ -15,9 +19,8 @@
         
       - **RMSE = 0.529** . The value of this error is roughly 25% of the mean TOV observed. 
 
-- The models created can be used to assists NBA coaches in player development because the model acts as a predictor of a player's expected TOV. A player vastly outperforming their expected TOV (i.e. commits less TOV that expected) could indicated high skill level which would mean that they require more on-ball possessions.
+- The models created can be used to assists NBA coaches in player development because the model acts as a predictor of a player's expected TOV. A player vastly outperforming their expected TOV (i.e. commits less TOV that expected) could indicate high skill level which would mean that they require more on-ball possessions.
 
-- For more indepth analysis see the report ('Multiple Linear Regression_with_FTA.docx'). 
 
 ## Python version and packages 
 Python Version: 3.8.3
@@ -92,5 +95,4 @@ The figure shows the Predicted V Actual turnovers commited per 36minutes
 
 ![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/Model%201--%20Predicted%20V%20Actual%20TOV.png)
 
-## Try out Model 
-Please feel free to try out the model using the 'Try_out_Model.py' file in the 'Try Out Models' folder
+
