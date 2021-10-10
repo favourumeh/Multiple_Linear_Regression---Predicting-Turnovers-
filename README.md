@@ -10,11 +10,11 @@
         
         - using train-test split and cross-validation 
         
- - Ultimately its was found that Two-point attempts (per36), Free throw Attempts (per36) and Assists (per36) were the only factors from the dataset that had a notable affected the TOV:
+ - Ultimately its was found that Two-point attempts per36(2PA), Free throw Attempts  per36(FTA) and Assists per36(AST)  were the only factors from the dataset that had a notable affected the TOV:
  
-        - **R2 = 0.46**. This is low because the model does not factor a player's skill which is the primary predicator of TOV. The R2 suggests that there is a significant variance in skill level amongs players  
+        - **R2=0.46** . This is low because the model does not factor a player's skill which is the primary predicator of TOV. The R2 suggests that there is a significant variance in skill level amongs players  
         
-        - **RMSE = 0.529**. This error is roughly 25% of the mean TOV observed. 
+        - **RMSE = 0.529** . This error is roughly 25% of the mean TOV observed. 
 
 - The models created can be used to assits NBA coaches in player development because the model acts as a predictor of a player's expected TOV. A player vastly outperforming their expected TOV (i.e. commits less TOV that expected) could indicated high skill level which would mean that they require more on-ball possessions.
 
@@ -53,5 +53,5 @@ To validate the metric results from the test dataset each metric was recalculate
 
 ## Model Results and Performance 
 ![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Model%20Summary%20result.png)
-
+![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Model%201--%20Predicted%20V%20Actual%20TOV.png)
 ## Try out Model 
