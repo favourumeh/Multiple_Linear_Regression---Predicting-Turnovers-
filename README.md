@@ -56,7 +56,11 @@ To validate the metric results from the test dataset each metric was recalculate
 
 
 ## Model Results and Performance 
-The figure shows the Predicted V Actual turnovers commited per 36minutes 
+Here are the summary results for both models 
 ![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/Model%20Summary%20result.png)
+
+The figure shows the Predicted V Actual turnovers commited per 36minutes 
 ![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/Model%201--%20Predicted%20V%20Actual%20TOV.png)
+
 ## Try out Model 
+Please feel free to try out the model 
