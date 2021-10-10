@@ -12,11 +12,13 @@
         
  - Ultimately its was found that Two-point attempts per36(2PA), Free throw Attempts  per36(FTA) and Assists per36(AST)  were the only factors from the dataset that had a notable affected the TOV:
  
-        - **R2=0.46** . This is low because the model does not factor a player's skill which is the primary predicator of TOV. The R2 suggests that there is a significant variance in skill level amongs players  
+        - **R2 = 0.46** . This is low because the model does not factor a player's skill which is the primary predicator of TOV. The R2 suggests that there is a significant variance in skill level amongs players  
         
         - **RMSE = 0.529** . This error is roughly 25% of the mean TOV observed. 
 
-- The models created can be used to assits NBA coaches in player development because the model acts as a predictor of a player's expected TOV. A player vastly outperforming their expected TOV (i.e. commits less TOV that expected) could indicated high skill level which would mean that they require more on-ball possessions.
+- The models created can be used to assists NBA coaches in player development because the model acts as a predictor of a player's expected TOV. A player vastly outperforming their expected TOV (i.e. commits less TOV that expected) could indicated high skill level which would mean that they require more on-ball possessions.
+
+- For more indepth analysis see the report ('Multiple Linear Regression_with_FTA.docx'). 
 
 ## Python version and packages 
 Python Version: 3.8.3
@@ -30,9 +32,11 @@ Packages: pandas, numpy, sklearn, statsmodles, matplotlib, seaborn, pickle
 
 - correlation plots
 ## Exploratory Data Analysis
+![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/Bar%20chart%20for%20player%20position%20population.png)
 
-![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Correlation%20plot.png)
+![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/Correlation%20plot.png)
 
+![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/lmplot%20for%20TOV%20v%20AST.png)
 
 ## Model Building 
 The dependent variable was TOV
@@ -52,6 +56,7 @@ To validate the metric results from the test dataset each metric was recalculate
 
 
 ## Model Results and Performance 
-![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Model%20Summary%20result.png)
-![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Model%201--%20Predicted%20V%20Actual%20TOV.png)
+The figure shows the Predicted V Actual turnovers commited per 36minutes 
+![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/Model%20Summary%20result.png)
+![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/Model%201--%20Predicted%20V%20Actual%20TOV.png)
 ## Try out Model 
