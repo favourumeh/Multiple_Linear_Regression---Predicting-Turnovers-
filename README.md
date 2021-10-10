@@ -53,5 +53,5 @@ To validate the metric results from the test dataset each metric was recalculate
 
 ## Model Results and Performance 
 ![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Model%20Summary%20result.png)
-
+![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Model%201--%20Predicted%20V%20Actual%20TOV.png)
 ## Try out Model 
