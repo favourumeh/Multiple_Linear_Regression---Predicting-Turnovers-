@@ -12,9 +12,9 @@
         
  - Ultimately its was found that Two-point attempts per36(2PA), Free throw Attempts  per36(FTA) and Assists per36(AST)  were the only factors from the dataset that had a notable affected the TOV:
  
-        - **R2 = 0.46**. This is low because the model does not factor a player's skill which is the primary predicator of TOV. The R2 suggests that there is a significant variance in skill level amongs players  
+        - **R2=0.46** . This is low because the model does not factor a player's skill which is the primary predicator of TOV. The R2 suggests that there is a significant variance in skill level amongs players  
         
-        - **RMSE = 0.529**. This error is roughly 25% of the mean TOV observed. 
+        - **RMSE = 0.529** . This error is roughly 25% of the mean TOV observed. 
 
 - The models created can be used to assits NBA coaches in player development because the model acts as a predictor of a player's expected TOV. A player vastly outperforming their expected TOV (i.e. commits less TOV that expected) could indicated high skill level which would mean that they require more on-ball possessions.
 
