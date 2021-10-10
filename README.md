@@ -31,7 +31,7 @@ Packages: pandas, numpy, sklearn, statsmodles, matplotlib, seaborn, pickle
 - correlation plots
 ## Exploratory Data Analysis
 
-![](Correlation plot.png)
+![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Correlation%20plot.png)
 
 
 ## Model Building 
