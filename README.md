@@ -1,36 +1,61 @@
 # Multiple_Linear_Regression-- Predicting Turnovers 
 
+- For more indepth analysis see the report ('Multiple Linear Regression_with_FTA.docx'). Otherwise the rest of the README gives a summary of some of the actions undergone and the findings of the project. 
+
+- Please feel free to try out the models using the 'Try_out_Model.py' file in the 'Try Out Models' folder
+
 ## Project Overview
  - In this project two multiple linear regression models were created to predict the turnovers commited by an NBA player per 36 minutes (TOV)
- - The model results were validated:
  
-        - against the linear regression assumptions (Homoscedasticity, No Autocorrelation, Normal Residuals, No Multicollinearity, Exogeneity)
+ - The model results were validated against the linear regression assumptions and using: 
         
-        - using the following metrics: 1) Mean Absolute Error (MAE); 2) Root Mean Squared Error (RMSE); 3) R-squared (R2)
+      - the following metrics: 1) Mean Absolute Error (MAE); 2) Root Mean Squared Error (RMSE); 3) R-squared (R2)
         
-        - using train-test split and cross-validation 
+      - train-test split and cross-validation 
         
- - Ultimately its was found that Two-point attempts per36(2PA), Free throw Attempts  per36(FTA) and Assists per36(AST)  were the only factors from the dataset that had a notable affected the TOV:
+ - Ultimately its was found that Two-point attempts per36(2PA), Free throw Attempts per36(FTA) and Assists per36(AST) were the only factors from the dataset that had a notable affected the TOV:
  
-        - **R2 = 0.46** . This is low because the model does not factor a player's skill which is the primary predicator of TOV. The R2 suggests that there is a significant variance in skill level amongs players  
+      - **R2 = 0.46** . This is low because the model does not factor a player's skill which is the primary predicator of TOV. The R2 suggests that there is a significant variance in skill level amongs players  
         
-        - **RMSE = 0.529** . This error is roughly 25% of the mean TOV observed. 
+      - **RMSE = 0.529** . The value of this error is roughly 25% of the mean TOV observed. 
 
-- The models created can be used to assists NBA coaches in player development because the model acts as a predictor of a player's expected TOV. A player vastly outperforming their expected TOV (i.e. commits less TOV that expected) could indicated high skill level which would mean that they require more on-ball possessions.
+- The models created can be used to assists NBA coaches in player development because the model acts as a predictor of a player's expected TOV. A player vastly outperforming their expected TOV (i.e. commits less TOV that expected) could indicate high skill level which would mean that they require more on-ball possessions.
 
-- For more indepth analysis see the report ('Multiple Linear Regression_with_FTA.docx'). 
 
 ## Python version and packages 
 Python Version: 3.8.3
 
 Packages: pandas, numpy, sklearn, statsmodles, matplotlib, seaborn, pickle
 
-## Data cleaning, transformation and Feature engineering
-- Early feature selection and engineering
+## Data used 
 
+Slice of table used
+
+![alt text](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/slice%20of%20data.png)
+
+Glossary of headings
+
+![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/glossary.png)
+
+## Data cleaning, transformation and Feature engineering
 - Nulls
 
-- correlation plots
+    - All instances of Null values were found in the percentages columns (i.e. 2P_per, 3P_per and FT_per) and the cause of this was division by zero. All null elements were due to a player not attempting a particular shot (i.e 2PA, 3PA, FTA = 0). Therefore 2P_per = 2P/2PA = nan.  
+    
+    - Instead of removing the rows that featured nulls the average shot attempts and shots made for each player position was calculated and assigned to the rows were 2PA, 3PA or FTA = 0. The percentage columns were then recalculated from this (e.g. 2P_per = 2P/2PA). 
+    
+    - For example, if a player played the centre position and they had zero 3PA (and thus zero the average 3PA and 3P for centres would be assigned to them and their 3P_per would from the average 3PA and 3P for centre.
+    
+- Early feature selection and engineering:
+
+    - Obvious instances of multicolinearity were removed (e.g. The shots made and shot attempted columns are highly correlatated so any shots made columns such as 2P was removed)
+    
+    - 'Minutes played' (MP) highly correlated with most of the other features but it could not be removed without violating Exogeneity assumption so its effect was dampened by extrapolating all relevant statistics to per 36 minutes statistics 
+    
+    ![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/Feature%20engineering%20and%20selection.png)
+    
+- correlation heatmaps and variance inflation factors was used to determine the not-so-obvious correlation amongst features 
+
 ## Exploratory Data Analysis
 Here is the distribution of the player position population used for the final model
 
@@ -70,5 +95,4 @@ The figure shows the Predicted V Actual turnovers commited per 36minutes
 
 ![](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/Model%201--%20Predicted%20V%20Actual%20TOV.png)
 
-## Try out Model 
-Please feel free to try out the model using the 'Try_out_Model.py' file in the 'Try Out Models' folder
+
