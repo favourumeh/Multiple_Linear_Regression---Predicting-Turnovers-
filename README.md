@@ -46,7 +46,7 @@ Glossary of table headings
     - 'PG' = Point Guard
     - 'SF' = Small Forward
     - 'SG' = Shooting Guard
- - MP is minutes played
+ - MP is minutes played per game
 - For further context behind the variables see the 'Features_Explained.docx' file 
 
 ## Data cleaning, transformation and Feature engineering
