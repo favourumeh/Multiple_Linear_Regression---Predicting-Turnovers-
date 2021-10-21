@@ -33,7 +33,7 @@ Slice of raw data table used.
 
 ![alt text](https://github.com/favourumeh/Multiple_Linear_Regression---Predicting-Turnovers-/blob/main/Images/slice%20of%20data.png)
 
- - These are per game statictics and were converted to per 36 minutes during the preprocessing phase 
+ - These are per game statictics and they were converted to per 36 minutes during the preprocessing phase 
  - Teams(Tm), Games played(G) and Games started(GS) and Year were removed from the data as they were irrelevant to the dependent variable TOV
 
 Glossary of table headings
