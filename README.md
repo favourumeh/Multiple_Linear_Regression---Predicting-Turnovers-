@@ -7,11 +7,13 @@
 ## Project Overview
  - In this project two multiple linear regression models were created to predict the turnovers committed by an NBA player per 36 minutes (TOV)
  
- - The model results were validated against the linear regression assumptions and using: 
+ - The linear model were validated against the linear regression assumptions: 1)	Homoskedasticity: (by Breush-Pagan Test); 2)	No Autocorrelation: (by Durbin Watson test); 3)	Normal Residuals (by Omnibus, Jarque-Bera ); 4)	No Multicollinearity (by correlation heatmap ) and 5)	Exogeneity(by intuition). 
+
+ - The model was evaluated using the following metrics        
+    - Mean Absolute Error (MAE);
+    - Root Mean Squared Error (RMSE); 
+    - R-squared (R2)
         
-      - the following metrics: 1) Mean Absolute Error (MAE); 2) Root Mean Squared Error (RMSE); 3) R-squared (R2)
-        
-      - train-test split and cross-validation 
         
  - Ultimately it was found that Two-point attempts per36(2PA), Free throw Attempts per36(FTA) and Assists per36(AST) were the only factors from the dataset that had a notable effect on the TOV:
  
@@ -56,7 +58,7 @@ Glossary of table headings
     
     - Instead of removing the rows that featured nulls the average shot attempts and shots made for each player position was calculated and assigned to the rows were 2PA, 3PA or FTA = 0. The percentage columns were then recalculated from this (e.g. 2P_per = 2P/2PA). 
     
-    - For example, if a player played the centre position and they had zero 3PA  then the average 3PA and 3P for centres would be assigned to them.
+    - For example, if a player played the centre position ('C') and they had zero 3PA  then the average 3PA and 3P for centres would be assigned to them.
     
 - Early feature selection and engineering:
 
